@@ -230,7 +230,30 @@ height:55px;
 
 <body class="bg-white">
     <!-- ================= ABOUT ================= -->
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
+        <img src="logo.png" class="h-14" alt="Logo">
+
+       <div class="flex justify-end gap-2 p-6">
+
+   <button class="lang-btn bg-red-700 text-white px-4 py-2 rounded" data-lang="en">
+    EN
+</button>
+
+    <button class="lang-btn bg-red-700 text-white px-4 py-2 rounded" data-lang="ar">
+        AR
+    </button>
+
+    <button class="lang-btn bg-red-700 text-white px-4 py-2 rounded" data-lang="id">
+        ID
+    </button>
+
+</div>
+
+    </div>
+</header>
 <section id="about" class="py-24 bg-white">
 
 <div class="max-w-7xl mx-auto px-6">
@@ -1402,7 +1425,7 @@ document.querySelectorAll(".lang-btn").forEach((btn)=>{
     });
 
 });
-    <script>
+   
 
 // ================= WHATSAPP FORM =================
 
@@ -1494,8 +1517,7 @@ if (mobileBtn && mobileMenu) {
 
 // ================= NAVBAR EFFECT =================
 
-const nav = document.querySelector("nav");
-
+const nav = document.querySelector("header");
 if (nav) {
 
     window.addEventListener("scroll", () => {
@@ -1544,6 +1566,8 @@ revealElements.forEach((el) => {
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
+
+ 
 
 </script>
 </body>
