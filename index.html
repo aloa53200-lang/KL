@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Global Trade | بوابة التجارة العالمية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0f172a',
+                        gold: '#d4af37',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Tajawal', sans-serif; }
+        .gradient-gold { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-lg border-b border-gold/20">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-gold font-bold">S</div>
+                <h1 class="text-xl font-extrabold text-navy tracking-tight">SKYLINE <span class="text-gold">GLOBAL</span></h1>
+            </div>
+            <div class="hidden md:flex gap-8 font-bold text-navy">
+                <a href="#home" class="hover:text-gold transition">الرئيسية</a>
+                <a href="#about" class="hover:text-gold transition">من نحن</a>
+                <a href="#services" class="hover:text-gold transition">خدماتنا</a>
+                <a href="#contact" class="bg-navy text-gold px-6 py-2 rounded-full hover:bg-slate-800 transition">طلب عرض سعر</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative h-screen flex items-center justify-center gradient-gold text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="container mx-auto px-4 text-center z-10">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 animate-fade-in">بوابتك نحو <span class="text-gold">الأسواق العالمية</span></h2>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-slate-300">نربط اقتصادك بالعالم عبر خدمات لوجستية ذكية، سرعة فائقة، ومعايير جودة لا تضاهى.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-gold text-navy px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-2xl shadow-gold/20">ابدأ الآن</a>
+                <a href="#services" class="border-2 border-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-navy transition">استكشف خدماتنا</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white border-b border-slate-200">
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-4xl font-extrabold text-gold mb-2">500+</div><div class="text-slate-600 font-bold">عملية استيراد ناجحة</div></div>
+            <div><div class="text-4xl font-extrabold text-gold mb-2">30+</div><div class="text-slate-600 font-bold">دولة حول العالم</div></div>
+            <div><div class="text-4xl font-extrabold text-gold mb-2">15+</div><div class="text-slate-600 font-bold">سنوات خبرة</div></div>
+            <div><div class="text-4xl font-extrabold text-gold mb-2">99%</div><div class="text-slate-600 font-bold">رضا العملاء</div></div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 container mx-auto px-4">
+        <h3 class="text-4xl font-bold text-center text-navy mb-16">خدماتنا اللوجستية المتميزة</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="group p-8 rounded-3xl bg-white border-2 border-slate-100 hover:border-gold transition-all shadow-xl hover:-translate-y-2">
+                <i class="fas fa-ship text-4xl text-gold mb-6"></i>
+                <h4 class="text-2xl font-bold mb-4 text-navy">شحن بحري وجوي</h4>
+                <p class="text-slate-600 leading-relaxed">حلول شحن متكاملة تضمن وصول بضائعك بأعلى مستويات السرعة والأمان عبر أفضل الخطوط الملاحية.</p>
+            </div>
+            <div class="group p-8 rounded-3xl bg-white border-2 border-slate-100 hover:border-gold transition-all shadow-xl hover:-translate-y-2">
+                <i class="fas fa-file-contract text-4xl text-gold mb-6"></i>
+                <h4 class="text-2xl font-bold mb-4 text-navy">تخليص جمركي</h4>
+                <p class="text-slate-600 leading-relaxed">خبرة قانونية في التعامل مع الإجراءات الجمركية وتخليص بضائعك دون تأخير أو تعقيدات إدارية.</p>
+            </div>
+            <div class="group p-8 rounded-3xl bg-white border-2 border-slate-100 hover:border-gold transition-all shadow-xl hover:-translate-y-2">
+                <i class="fas fa-warehouse text-4xl text-gold mb-6"></i>
+                <h4 class="text-2xl font-bold mb-4 text-navy">تخزين وتوزيع</h4>
+                <p class="text-slate-600 leading-relaxed">مستودعات مجهزة بأعلى المعايير التقنية لإدارة مخزونك وتوزيعه بكفاءة إلى وجهتك النهائية.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-16">
+                <h3 class="text-3xl font-bold text-navy mb-8 text-center">طلب عرض سعر مخصص</h3>
+                <form class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="الاسم الكامل" class="p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold outline-none">
+                    <input type="email" placeholder="البريد الإلكتروني" class="p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold outline-none">
+                    <input type="text" placeholder="نوع البضاعة" class="p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold outline-none">
+                    <input type="text" placeholder="الكمية / الحجم" class="p-4 rounded-xl border border-slate-200 focus:ring-2 focus:ring-gold outline-none">
+                    <textarea placeholder="تفاصيل إضافية" class="md:col-span-2 p-4 rounded-xl border border-slate-200 h-32 focus:ring-2 focus:ring-gold outline-none"></textarea>
+                    <button class="md:col-span-2 bg-navy text-gold font-bold py-4 rounded-xl hover:bg-slate-900 transition text-lg">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white py-12 text-center border-t-4 border-gold">
+        <div class="container mx-auto px-4">
+            <p class="text-2xl font-bold mb-4">SKYLINE GLOBAL TRADE</p>
+            <p class="opacity-60">نصنع جسوراً بين أعمالك والعالم</p>
+            <div class="mt-8 flex justify-center gap-6">
+                <i class="fab fa-facebook text-2xl hover:text-gold cursor-pointer"></i>
+                <i class="fab fa-instagram text-2xl hover:text-gold cursor-pointer"></i>
+                <i class="fab fa-linkedin text-2xl hover:text-gold cursor-pointer"></i>
+            </div>
+            <p class="mt-8 text-sm opacity-50">&copy; 2026 Skyline Global Trade - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+</body>
+</html>
