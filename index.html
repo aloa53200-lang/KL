@@ -114,10 +114,17 @@
 
         <div class="flex gap-2">
 
-            <button onclick="changeLanguage('ar')" class="lang-btn">
-                العربية
-            </button>
+<button onclick="changeLanguage('ar')" class="lang-btn bg-slate-100">
+العربية
+</button>
 
+<button onclick="changeLanguage('en')" class="lang-btn bg-slate-100">
+EN
+</button>
+
+<button onclick="changeLanguage('id')" class="lang-btn bg-slate-100">
+ID
+</button>
             <button onclick="changeLanguage('en')" class="lang-btn">
                 EN
             </button>
@@ -396,8 +403,7 @@
             </h2>
 
 
-            <form class="grid md:grid-cols-2 gap-6">
-
+<form onsubmit="sendWhatsApp(); return false;" class="grid md:grid-cols-2 gap-6">
 
                 <input id="nameInput"
                 type="text"
@@ -673,114 +679,144 @@ footer:"Membangun hubungan bisnis dengan dunia"
 
 function changeLanguage(language){
 
-
 let t = translations[language];
 
 
-// اتجاه الصفحة
+// تغيير اتجاه الصفحة
 
 document.documentElement.dir = t.dir;
-
 document.documentElement.lang = language;
-
 
 
 // Navbar
 
-navHome.innerHTML=t.navHome;
-navAbout.innerHTML=t.navAbout;
-navServices.innerHTML=t.navServices;
-navContact.innerHTML=t.navContact;
+document.getElementById("navHome").innerHTML=t.navHome;
+document.getElementById("navAbout").innerHTML=t.navAbout;
+document.getElementById("navServices").innerHTML=t.navServices;
+document.getElementById("navContact").innerHTML=t.navContact;
 
 
 // Hero
 
-heroTitle.innerHTML=t.heroTitle;
-heroDesc.innerHTML=t.heroDesc;
+document.getElementById("heroTitle").innerHTML=t.heroTitle;
+document.getElementById("heroDesc").innerHTML=t.heroDesc;
 
-startBtn.innerHTML=t.startBtn;
-serviceBtn.innerHTML=t.serviceBtn;
+document.getElementById("startBtn").innerHTML=t.startBtn;
+document.getElementById("serviceBtn").innerHTML=t.serviceBtn;
 
 
 // About
 
-aboutTitle.innerHTML=t.aboutTitle;
+document.getElementById("aboutTitle").innerHTML=t.aboutTitle;
 
-aboutText1.innerHTML=t.aboutText1;
-aboutText2.innerHTML=t.aboutText2;
+document.getElementById("aboutText1").innerHTML=t.aboutText1;
+document.getElementById("aboutText2").innerHTML=t.aboutText2;
 
 
 // Statistics
 
-stat1.innerHTML=t.stat1;
-stat2.innerHTML=t.stat2;
-stat3.innerHTML=t.stat3;
-stat4.innerHTML=t.stat4;
+document.getElementById("stat1").innerHTML=t.stat1;
+document.getElementById("stat2").innerHTML=t.stat2;
+document.getElementById("stat3").innerHTML=t.stat3;
+document.getElementById("stat4").innerHTML=t.stat4;
 
 
 // Services
 
-servicesTitle.innerHTML=t.servicesTitle;
+document.getElementById("servicesTitle").innerHTML=t.servicesTitle;
 
-service1Title.innerHTML=t.service1Title;
-service1Text.innerHTML=t.service1Text;
+document.getElementById("service1Title").innerHTML=t.service1Title;
+document.getElementById("service1Text").innerHTML=t.service1Text;
 
-service2Title.innerHTML=t.service2Title;
-service2Text.innerHTML=t.service2Text;
+document.getElementById("service2Title").innerHTML=t.service2Title;
+document.getElementById("service2Text").innerHTML=t.service2Text;
 
-service3Title.innerHTML=t.service3Title;
-service3Text.innerHTML=t.service3Text;
+document.getElementById("service3Title").innerHTML=t.service3Title;
+document.getElementById("service3Text").innerHTML=t.service3Text;
 
 
 // Contact
 
-contactTitle.innerHTML=t.contactTitle;
+document.getElementById("contactTitle").innerHTML=t.contactTitle;
 
-nameInput.placeholder=t.name;
-emailInput.placeholder=t.email;
-productInput.placeholder=t.product;
-quantityInput.placeholder=t.quantity;
-messageInput.placeholder=t.message;
+document.getElementById("nameInput").placeholder=t.name;
+document.getElementById("emailInput").placeholder=t.email;
+document.getElementById("productInput").placeholder=t.product;
+document.getElementById("quantityInput").placeholder=t.quantity;
+document.getElementById("messageInput").placeholder=t.message;
 
-sendBtn.innerHTML=t.send;
+document.getElementById("sendBtn").innerHTML=t.send;
 
 
 // Footer
 
-footerText.innerHTML=t.footer;
+document.getElementById("footerText").innerHTML=t.footer;
 
 
 // حفظ اللغة
 
 localStorage.setItem("language",language);
 
+}
+
+
+
+
+function sendWhatsApp(){
+
+let name=document.getElementById("nameInput").value;
+
+let product=document.getElementById("productInput").value;
+
+let quantity=document.getElementById("quantityInput").value;
+
+let message=document.getElementById("messageInput").value;
+
+
+let phone="6281234567890";
+
+
+let text =
+"Name: "+name+
+"\nProduct: "+product+
+"\nQuantity: "+quantity+
+"\nDetails: "+message;
+
+
+window.open(
+"https://wa.me/"+phone+"?text="+encodeURIComponent(text),
+"_blank"
+);
 
 }
 
 
 
-// تحميل آخر لغة
+// تحميل اللغة المحفوظة
 
 let savedLanguage = localStorage.getItem("language");
+
 
 if(savedLanguage){
 
 changeLanguage(savedLanguage);
 
+}else{
+
+changeLanguage("ar");
+
 }
 
 
 </script>
+
 <!-- ================= WHATSAPP FLOAT BUTTON ================= -->
 
 <a href="https://wa.me/6281234567890"
 target="_blank"
-
 class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition">
 
-
 <i class="fab fa-whatsapp text-4xl"></i>
-
 
 </a>
 
