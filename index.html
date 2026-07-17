@@ -221,22 +221,19 @@
                         About Skyline
                     </span>
 
-                    <h2 class="text-5xl font-extrabold text-gray-900 mt-3 mb-6">
+                    <h2 class="text-5xl font-extrabold text-gray-900 mt-3 mb-6"  data-lang="aboutTitle">
                         Connecting Businesses
                         <br>
                         Across The World
                     </h2>
 
-                    <p class="text-gray-600 leading-9 text-lg mb-6">
-                        Skyline Global Trade is an international trading company specializing in import, export,
-                        customs clearance, logistics, and worldwide shipping solutions.
+                    <p data-lang="aboutText1">
+                    Skyline Global Trade is an international trading company specializing in import, export, customs clearance, logistics, and worldwide shipping solutions.
                     </p>
 
-                    <p class="text-gray-600 leading-9 text-lg">
-                        Our mission is to help companies expand globally through reliable supply chains,
-                        competitive pricing, and professional logistics services.
+                   <p data-lang="aboutText2">
+                    Our mission is to help companies expand globally through reliable supply chains, competitive pricing, and professional logistics services.
                     </p>
-
                     <!-- Features -->
                     <div class="grid grid-cols-2 gap-5 mt-10">
 
@@ -1066,213 +1063,377 @@ class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 text-white fle
 
 const translations = {
 
-    ar: {
+en:{
 
-        dir: "rtl",
+dir:"ltr",
 
-        home: "الرئيسية",
-        about: "من نحن",
-        services: "خدماتنا",
-        products: "منتجاتنا",
-        contact: "تواصل معنا",
+heroTitle:"Your Trusted Partner In Global Trade",
+heroDesc:"Professional import, export, shipping and logistics solutions worldwide.",
 
-        heroTitle: "شريكك الموثوق في التجارة العالمية",
-        heroDesc: "نوفر حلول الاستيراد والتصدير والشحن والخدمات اللوجستية باحترافية عالمية.",
+quote:"Request Quote",
+ourServices:"Our Services",
 
-        quote: "طلب عرض سعر",
-        ourServices: "خدماتنا",
+aboutSmall:"About Skyline",
+aboutTitle:"Connecting Businesses <br> Across The World",
 
-        aboutTitle: "من نحن",
-        aboutText: "شركة Skyline Global Trade متخصصة في التجارة الدولية وخدمات الاستيراد والتصدير والشحن والتخليص الجمركي.",
+aboutText1:"Skyline Global Trade is an international trading company specializing in import, export, customs clearance, logistics, and worldwide shipping solutions.",
 
-        servicesTitle: "حلول متكاملة للتجارة والخدمات اللوجستية",
+aboutText2:"Our mission is to help companies expand globally through reliable supply chains, competitive pricing, and professional logistics services.",
 
-        productsTitle: "منتجاتنا الرئيسية",
+feature1:"Reliable Partners",
+feature2:"Global Network",
+feature3:"Professional Team",
+feature4:"Competitive Prices",
 
-        contactTitle: "تواصل معنا",
+whyTitle:"Why Choose Skyline?",
+whyDesc:"Professional international trading solutions.",
 
-        send: "إرسال الطلب",
+card1Title:"Worldwide Network",
+card1Text:"We work with suppliers and buyers across multiple international markets.",
 
-        footer: "جميع الحقوق محفوظة"
+card2Title:"Fast Shipping",
+card2Text:"Sea freight and air freight with trusted logistics partners.",
 
-    },
+card3Title:"24/7 Support",
+card3Text:"Dedicated customer service before and after shipment.",
 
-    en: {
+stat1:"Successful Shipments",
+stat2:"Countries",
+stat3:"Years Experience",
+stat4:"Satisfied Clients",
 
-        dir: "ltr",
+countriesTitle:"Countries We Trade With",
+countriesDesc:"Building strong international business relationships.",
 
-        home: "Home",
-        about: "About",
-        services: "Services",
-        products: "Products",
-        contact: "Contact",
+servicesSmall:"Our Services",
+servicesTitle:"Complete Trading & Logistics Solutions",
+servicesDesc:"We provide complete international trading services from sourcing to delivery.",
 
-        heroTitle: "Your Trusted Partner In Global Trade",
-        heroDesc: "Professional import, export, shipping and logistics solutions worldwide.",
+sea:"Sea Freight",
+seaDesc:"Reliable international sea freight with competitive shipping rates.",
 
-        quote: "Request Quote",
-        ourServices: "Our Services",
+air:"Air Freight",
+airDesc:"Fast air cargo solutions for urgent shipments worldwide.",
 
-        aboutTitle: "About Us",
-        aboutText: "Skyline Global Trade specializes in international trade, logistics, customs clearance, import and export services.",
+customs:"Customs Clearance",
+customsDesc:"Professional customs documentation and clearance services.",
 
-        servicesTitle: "Complete Trading & Logistics Solutions",
+warehouse:"Warehousing",
+warehouseDesc:"Modern storage facilities with secure inventory management.",
 
-        productsTitle: "Our Main Products",
+truck:"Inland Transport",
+truckDesc:"Efficient trucking and inland transportation solutions.",
 
-        contactTitle: "Contact Us",
+importExport:"Import & Export",
+importExportDesc:"Complete import and export management for international business.",
 
-        send: "Send Request",
+productsSmall:"Products",
+productsTitle:"Our Main Products",
 
-        footer: "All Rights Reserved"
+charcoal:"Coconut Charcoal",
+charcoalDesc:"Premium coconut shell charcoal for BBQ and Shisha.",
 
-    },
+stone:"Natural Stone",
+stoneDesc:"Granite, Marble, Onyx and premium natural stones.",
 
-    id: {
+textile:"Textile",
+textileDesc:"High-quality fabrics for fashion and industry.",
 
-        dir: "ltr",
+coffee:"Coffee Beans",
+coffeeDesc:"Premium Indonesian coffee beans for export.",
 
-        home: "Beranda",
-        about: "Tentang",
-        services: "Layanan",
-        products: "Produk",
-        contact: "Kontak",
+gallerySmall:"Gallery",
+galleryTitle:"Our Business Activities",
 
-        heroTitle: "Mitra Terpercaya Anda Dalam Perdagangan Global",
-        heroDesc: "Solusi impor, ekspor, pengiriman dan logistik profesional untuk seluruh dunia.",
+contactSmall:"Contact Us",
+contactTitle:"Request A Quote",
+contactDesc:"Contact Skyline Global Trade today for import, export, shipping and logistics solutions.",
 
-        quote: "Minta Penawaran",
-        ourServices: "Layanan Kami",
+phone:"Phone",
+email:"Email",
+office:"Office",
 
-        aboutTitle: "Tentang Kami",
-        aboutText: "Skyline Global Trade bergerak di bidang perdagangan internasional, logistik, bea cukai, impor dan ekspor.",
+fullName:"Full Name",
+company:"Company",
+emailPlace:"Email",
+phonePlace:"Phone",
+country:"Country",
+product:"Product",
+quantity:"Quantity",
+port:"Destination Port",
+message:"Your Message",
 
-        servicesTitle: "Solusi Perdagangan & Logistik Lengkap",
+send:"Send Request",
 
-        productsTitle: "Produk Utama Kami",
+footerCompany:"Company",
+footerServices:"Services",
+follow:"Follow Us",
 
-        contactTitle: "Hubungi Kami",
+rights:"All Rights Reserved"
 
-        send: "Kirim Permintaan",
+},
 
-        footer: "Hak Cipta Dilindungi"
+ar:{
 
-    }
+dir:"rtl",
+
+heroTitle:"شريكك الموثوق في التجارة العالمية",
+heroDesc:"نوفر حلول الاستيراد والتصدير والشحن والخدمات اللوجستية حول العالم.",
+
+quote:"طلب عرض سعر",
+ourServices:"خدماتنا",
+
+aboutSmall:"من نحن",
+aboutTitle:"نربط الشركات حول العالم",
+
+aboutText1:"شركة Skyline Global Trade متخصصة في التجارة الدولية والاستيراد والتصدير والتخليص الجمركي والخدمات اللوجستية.",
+
+aboutText2:"نساعد الشركات على التوسع عالمياً عبر حلول احترافية وسلاسل إمداد موثوقة.",
+
+feature1:"شركاء موثوقون",
+feature2:"شبكة عالمية",
+feature3:"فريق محترف",
+feature4:"أسعار تنافسية",
+
+whyTitle:"لماذا تختار Skyline؟",
+whyDesc:"حلول احترافية للتجارة الدولية.",
+
+card1Title:"شبكة عالمية",
+card1Text:"نتعامل مع الموردين والمشترين في مختلف دول العالم.",
+
+card2Title:"شحن سريع",
+card2Text:"شحن بحري وجوي مع أفضل شركات الخدمات اللوجستية.",
+
+card3Title:"دعم 24/7",
+card3Text:"خدمة عملاء قبل وبعد الشحن.",
+
+stat1:"شحنة ناجحة",
+stat2:"دولة",
+stat3:"سنوات خبرة",
+stat4:"عملاء راضون",
+
+countriesTitle:"الدول التي نتعامل معها",
+countriesDesc:"نبني علاقات تجارية قوية حول العالم.",
+
+servicesSmall:"خدماتنا",
+servicesTitle:"حلول متكاملة للتجارة والخدمات اللوجستية",
+servicesDesc:"نوفر جميع خدمات التجارة الدولية من التوريد وحتى التسليم.",
+
+sea:"الشحن البحري",
+seaDesc:"حلول شحن بحري موثوقة بأسعار تنافسية.",
+
+air:"الشحن الجوي",
+airDesc:"حلول شحن جوي سريعة للشحنات العاجلة.",
+
+customs:"التخليص الجمركي",
+customsDesc:"خدمات احترافية لإنهاء الإجراءات الجمركية.",
+
+warehouse:"التخزين",
+warehouseDesc:"مستودعات حديثة وآمنة.",
+
+truck:"النقل البري",
+truckDesc:"حلول نقل بري فعالة.",
+
+importExport:"الاستيراد والتصدير",
+importExportDesc:"إدارة كاملة لعمليات الاستيراد والتصدير.",
+
+productsSmall:"المنتجات",
+productsTitle:"أهم منتجاتنا",
+
+charcoal:"فحم جوز الهند",
+charcoalDesc:"فحم فاخر للشواء والشيشة.",
+
+stone:"الأحجار الطبيعية",
+stoneDesc:"جرانيت ورخام وأونيكس.",
+
+textile:"الأقمشة",
+textileDesc:"أقمشة عالية الجودة.",
+
+coffee:"حبوب القهوة",
+coffeeDesc:"قهوة إندونيسية ممتازة للتصدير.",
+
+gallerySmall:"المعرض",
+galleryTitle:"أنشطتنا التجارية",
+
+contactSmall:"تواصل معنا",
+contactTitle:"اطلب عرض سعر",
+contactDesc:"تواصل معنا اليوم للحصول على أفضل حلول التجارة والشحن.",
+
+phone:"الهاتف",
+email:"البريد الإلكتروني",
+office:"المكتب",
+
+fullName:"الاسم الكامل",
+company:"الشركة",
+emailPlace:"البريد الإلكتروني",
+phonePlace:"رقم الهاتف",
+country:"الدولة",
+product:"المنتج",
+quantity:"الكمية",
+port:"ميناء الوصول",
+message:"اكتب رسالتك",
+
+send:"إرسال الطلب",
+
+footerCompany:"الشركة",
+footerServices:"الخدمات",
+follow:"تابعنا",
+
+rights:"جميع الحقوق محفوظة"
+
+},
+
+id:{
+
+dir:"ltr",
+
+heroTitle:"Mitra Terpercaya Dalam Perdagangan Global",
+heroDesc:"Solusi impor, ekspor, pengiriman dan logistik profesional.",
+
+quote:"Minta Penawaran",
+ourServices:"Layanan Kami",
+
+aboutSmall:"Tentang Kami",
+aboutTitle:"Menghubungkan Bisnis Ke Seluruh Dunia",
+
+aboutText1:"Skyline Global Trade adalah perusahaan perdagangan internasional yang bergerak di bidang impor, ekspor, logistik dan bea cukai.",
+
+aboutText2:"Kami membantu perusahaan berkembang secara global melalui solusi profesional.",
+
+feature1:"Mitra Terpercaya",
+feature2:"Jaringan Global",
+feature3:"Tim Profesional",
+feature4:"Harga Kompetitif"
+
+}
 
 };
-// ================= CHANGE LANGUAGE =================
+// =============================
+// LANGUAGE SYSTEM
+// =============================
 
-function changeLanguage(lang){
+const savedLang = localStorage.getItem("skyline_lang") || "en";
+
+changeLanguage(savedLang);
+
+document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        changeLanguage(btn.dataset.lang);
+    });
+});
+
+
+// =============================
+// CHANGE LANGUAGE
+// =============================
+
+function changeLanguage(lang) {
 
     const t = translations[lang];
-
-    if(!t) return;
+    if (!t) return;
 
     document.documentElement.lang = lang;
     document.documentElement.dir = t.dir;
 
-    // Navbar
+    // ================= HERO =================
 
+    document.querySelector("#home h1").textContent = t.heroTitle;
+    document.querySelector("#home p").textContent = t.heroDesc;
 
-    const about = document.querySelector('a[href="#about"]');
-    if(about) about.textContent = t.about;
+    document.querySelector(".btn1").textContent = t.quote;
+    document.querySelector(".btn2").textContent = t.ourServices;
 
-    const services = document.querySelector('a[href="#services"]');
-    if(services) services.textContent = t.services;
+    // ================= ABOUT =================
 
-    const products = document.querySelector('a[href="#products"]');
-    if(products) products.textContent = t.products;
+    document.querySelector("#about span").textContent = t.aboutSmall;
+    document.querySelector("#about h2").textContent = t.aboutTitle;
 
-    const contact = document.querySelector('a[href="#contact"]');
-    if(contact) contact.textContent = t.contact;
+    const aboutText = document.querySelectorAll("#about p");
 
+    if (aboutText.length >= 2) {
+        aboutText[0].textContent = t.aboutText1;
+        aboutText[1].textContent = t.aboutText2;
+    }
 
-    // About
-    const aboutSection = document.getElementById("about");
+    // Features
 
-    if(aboutSection){
+    const features = document.querySelectorAll("#about .grid span");
 
-        const title = aboutSection.querySelector("h2");
-        if(title) title.textContent = t.aboutTitle;
+    if (features.length >= 4) {
+        features[0].textContent = t.feature1;
+        features[1].textContent = t.feature2;
+        features[2].textContent = t.feature3;
+        features[3].textContent = t.feature4;
+    }
 
-        const p = aboutSection.querySelector("p");
-        if(p) p.textContent = t.aboutText;
+    // ================= WHY CHOOSE US =================
+
+    document.querySelector(".bg-gray-100 h2").textContent = t.whyTitle;
+    document.querySelector(".bg-gray-100 p").textContent = t.whyDesc;
+
+    // ================= SERVICES =================
+
+    document.querySelector("#services span").textContent = t.servicesSmall;
+    document.querySelector("#services h2").textContent = t.servicesTitle;
+    document.querySelector("#services .text-gray-500").textContent = t.servicesDesc;
+
+    // ================= PRODUCTS =================
+
+    document.querySelector("#products span").textContent = t.productsSmall;
+    document.querySelector("#products h2").textContent = t.productsTitle;
+
+    // ================= GALLERY =================
+
+    const gallery = document.querySelectorAll("section");
+
+    if (gallery[7]) {
+
+        gallery[7].querySelector("span").textContent = t.gallerySmall;
+        gallery[7].querySelector("h2").textContent = t.galleryTitle;
 
     }
 
-    // Services
-    const servicesSection = document.getElementById("services");
+    // ================= CONTACT =================
 
-    if(servicesSection){
+    document.querySelector("#contact span").textContent = t.contactSmall;
+    document.querySelector("#contact h2").textContent = t.contactTitle;
+    document.querySelector("#contact .text-gray-600").textContent = t.contactDesc;
 
-        const title = servicesSection.querySelector("h2");
-        if(title) title.textContent = t.servicesTitle;
+    document.getElementById("sendBtn").textContent = t.send;
 
-    }
+    // ================= FORM PLACEHOLDERS =================
 
-    // Products
-    const productsSection = document.getElementById("products");
+    const inputs = document.querySelectorAll("#contactForm input");
 
-    if(productsSection){
+    inputs[0].placeholder = t.fullName;
+    inputs[1].placeholder = t.company;
+    inputs[2].placeholder = t.emailPlace;
+    inputs[3].placeholder = t.phonePlace;
+    inputs[4].placeholder = t.country;
+    inputs[5].placeholder = t.product;
+    inputs[6].placeholder = t.quantity;
+    inputs[7].placeholder = t.port;
 
-        const title = productsSection.querySelector("h2");
-        if(title) title.textContent = t.productsTitle;
+    document.querySelector("#contactForm textarea").placeholder = t.message;
 
-    }
+    // ================= FOOTER =================
 
-    // Contact
-    const contactSection = document.getElementById("contact");
+    document.getElementById("copyright").innerHTML =
+        `© ${new Date().getFullYear()} Skyline Global Trade. ${t.rights}`;
 
-    if(contactSection){
+    // ================= SAVE =================
 
-        const title = contactSection.querySelector("h2");
-        if(title) title.textContent = t.contactTitle;
-
-    }
-
-    // Send Button
-    const sendBtn = document.getElementById("sendBtn");
-
-    if(sendBtn){
-        sendBtn.textContent = t.send;
-    }
-
-    // Footer
-    const copyright = document.getElementById("copyright");
-
-    if(copyright){
-        const contactForm =
-document.getElementById("contactForm");
-    }
-
-    // Save
     localStorage.setItem("skyline_lang", lang);
 
 }
 
-// ================= LOAD SAVED LANGUAGE =================
 
-const savedLang =
-localStorage.getItem("skyline_lang") || "en";
-
-changeLanguage(savedLang);
-
-// ================= LANGUAGE BUTTONS =================
-
-document.querySelectorAll(".lang-btn").forEach((btn)=>{
-
-    btn.addEventListener("click",()=>{
-
-        changeLanguage(btn.dataset.lang);
-
-    });
-
-});
-   
-
-// ================= WHATSAPP FORM =================
+// =============================
+// WHATSAPP FORM
+// =============================
 
 const contactForm = document.getElementById("contactForm");
+
 if (contactForm) {
 
     contactForm.addEventListener("submit", function (e) {
@@ -1281,15 +1442,15 @@ if (contactForm) {
 
         const inputs = contactForm.querySelectorAll("input, textarea");
 
-        const fullName = inputs[0]?.value || "";
-        const company = inputs[1]?.value || "";
-        const email = inputs[2]?.value || "";
-        const phone = inputs[3]?.value || "";
-        const country = inputs[4]?.value || "";
-        const product = inputs[5]?.value || "";
-        const quantity = inputs[6]?.value || "";
-        const port = inputs[7]?.value || "";
-        const message = inputs[8]?.value || "";
+        const fullName = inputs[0].value;
+        const company = inputs[1].value;
+        const email = inputs[2].value;
+        const phone = inputs[3].value;
+        const country = inputs[4].value;
+        const product = inputs[5].value;
+        const quantity = inputs[6].value;
+        const port = inputs[7].value;
+        const message = inputs[8].value;
 
         const text =
 `*NEW TRADE REQUEST*
@@ -1315,7 +1476,10 @@ ${message}`;
 
 }
 
-// ================= SCROLL TO TOP =================
+
+// =============================
+// SCROLL TO TOP
+// =============================
 
 const scrollBtn = document.getElementById("scrollTop");
 
@@ -1323,11 +1487,7 @@ if (scrollBtn) {
 
     window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 400) {
-            scrollBtn.classList.remove("hidden");
-        } else {
-            scrollBtn.classList.add("hidden");
-        }
+        scrollBtn.classList.toggle("hidden", window.scrollY < 400);
 
     });
 
@@ -1343,37 +1503,42 @@ if (scrollBtn) {
 }
 
 
+// =============================
+// NAVBAR SHADOW
+// =============================
 
-// ================= NAVBAR EFFECT =================
+const header = document.querySelector("header");
 
-const nav = document.querySelector("header");
-if (nav) {
+window.addEventListener("scroll", () => {
 
-    window.addEventListener("scroll", () => {
+    if (!header) return;
 
-        if (window.scrollY > 80) {
-            nav.classList.add("shadow-2xl");
-        } else {
-            nav.classList.remove("shadow-2xl");
-        }
+    header.classList.toggle("shadow-2xl", window.scrollY > 80);
 
-    });
+});
 
-}
 
-// ================= SCROLL ANIMATION =================
+// =============================
+// SCROLL ANIMATION
+// =============================
 
 const revealElements = document.querySelectorAll(
-    "section, .bg-white, .bg-gray-100"
+    "section,.bg-white,.bg-gray-100"
 );
+
+revealElements.forEach(el => {
+
+    el.style.opacity = "0";
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all .8s ease";
+
+});
 
 function revealOnScroll() {
 
-    revealElements.forEach((el) => {
+    revealElements.forEach(el => {
 
-        const top = el.getBoundingClientRect().top;
-
-        if (top < window.innerHeight - 100) {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
 
             el.style.opacity = "1";
             el.style.transform = "translateY(0)";
@@ -1384,19 +1549,9 @@ function revealOnScroll() {
 
 }
 
-revealElements.forEach((el) => {
-
-    el.style.opacity = "0";
-    el.style.transform = "translateY(40px)";
-    el.style.transition = "all .8s ease";
-
-});
-
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
-
- 
 
 </script>
 </body>
