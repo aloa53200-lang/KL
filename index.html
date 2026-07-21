@@ -162,11 +162,11 @@
                 <span class="font-bold text-xl text-gray-900 hidden md:inline" data-lang="siteTitle">Skyline Global Trade</span>
             </div>
 
-            <!-- Language Buttons & Mobile Icon -->
+            <!-- Language Buttons & Mobile Call Icon -->
             <div class="flex items-center gap-4">
-                <!-- Phone Icon Added Here -->
-                <a href="tel:+6281234567890" class="text-red-700 text-xl hover:text-red-900 duration-300" title="Call Us">
-                    <i class="fas fa-mobile-screen-button"></i>
+                <!-- زر الاتصال المباشر للجوال (يدعم الاتصال الفعلي عند النقر) -->
+                <a href="tel:0816104000" class="text-red-700 text-xl hover:text-red-900 duration-300 flex items-center justify-center w-10 h-10 rounded-full bg-red-50 hover:bg-red-100" title="Call Us">
+                    <i class="fas fa-phone-alt"></i>
                 </a>
 
                 <div class="flex justify-end gap-2">
@@ -595,32 +595,32 @@ Contact Skyline Global Trade today for import, export, shipping and logistics so
 <div class="space-y-6">
 
 <div class="flex items-center gap-5">
-<div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center shrink-0">
 <i class="fas fa-phone"></i>
 </div>
 <div>
 <h4 class="font-bold" data-lang="phone">Phone</h4>
-<p>+62 812-3456-7890</p>
+<a href="tel:0816104000" class="text-gray-600 hover:text-red-700">0816104000</a>
 </div>
 </div>
 
 <div class="flex items-center gap-5">
-<div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center shrink-0">
 <i class="fas fa-envelope"></i>
 </div>
 <div>
 <h4 class="font-bold" data-lang="email">Email</h4>
-<p>info@skylineglobaltrade.com</p>
+<p class="text-gray-600">info@skylineglobaltrade.com</p>
 </div>
 </div>
 
 <div class="flex items-center gap-5">
-<div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center shrink-0">
 <i class="fas fa-location-dot"></i>
 </div>
 <div>
 <h4 class="font-bold" data-lang="office">Office</h4>
-<p>Jakarta, Indonesia</p>
+<p class="text-gray-600" data-lang="officeAddress">ITC Kuningan Lantai Dasar Blok F3 No.3 Jl. Prof. Dr. Satrio, Desa/Kelurahan Karet Kuningan, Kec. Setiabudi, Kota Adm. Jakarta Selatan, Provinsi DKI Jakarta, Kode Pos : 12940</p>
 </div>
 </div>
 
@@ -646,7 +646,7 @@ Contact Skyline Global Trade today for import, export, shipping and logistics so
 
 <textarea rows="6" placeholder="Your Message" class="md:col-span-2 p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700"></textarea>
 
-<button id="sendBtn" class="md:col-span-2 bg-red-700 text-white py-4 rounded-xl font-bold hover:bg-red-800 duration-300">
+<button id="sendBtn" class="md:col-span-2 bg-red-700 text-white py-4 rounded-xl font-bold hover:bg-red-800 duration-300" data-lang="send">
 Send Request
 </button>
 
@@ -702,11 +702,11 @@ Skyline Global Trade is your trusted international trading partner.
 <div>
 <h3 class="font-bold text-xl mb-6" data-lang="follow">Follow Us</h3>
 <div class="flex gap-4 text-2xl">
-<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-facebook"></i></a>
-<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-instagram"></i></a>
-<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-linkedin"></i></a>
-<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-youtube"></i></a>
-<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/share/1HeXijCwYB/?mibextid=wwXIfr" target="_blank" class="hover:text-red-500 duration-300"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/skyline.g.t?igsh=MXUwcDFoOGNnOXFzdA%3D%3D&utm_source=qr" target="_blank" class="hover:text-red-500 duration-300"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@skyline12940?_r=1&_t=ZS-983xGw97U87" target="_blank" class="hover:text-red-500 duration-300"><i class="fab fa-tiktok"></i></a>
+<a href="#" target="_blank" class="hover:text-red-500 duration-300"><i class="fab fa-linkedin"></i></a>
+<a href="#" target="_blank" class="hover:text-red-500 duration-300"><i class="fab fa-youtube"></i></a>
 </div>
 </div>
 
@@ -726,7 +726,7 @@ Skyline Global Trade is your trusted international trading partner.
 </button>
 
 <!-- WhatsApp Floating -->
-<a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 duration-300 z-50">
+<a href="https://wa.me/62816104000" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 duration-300 z-50">
 <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -796,6 +796,7 @@ const translations = {
         phone: "Phone",
         email: "Email",
         office: "Office",
+        officeAddress: "ITC Kuningan Ground Floor Blok F3 No.3 Jl. Prof. Dr. Satrio, Karet Kuningan, Setiabudi, South Jakarta, DKI Jakarta 12940",
         fullName: "Full Name",
         company: "Company",
         emailPlace: "Email",
@@ -884,6 +885,7 @@ const translations = {
         phone: "الهاتف",
         email: "البريد الإلكتروني",
         office: "المكتب",
+        officeAddress: "ITC Kuningan Lantai Dasar Blok F3 No.3 Jl. Prof. Dr. Satrio, Desa/Kelurahan Karet Kuningan, Kec. Setia Budi, Kota Adm Jakarta Selatan, Provinsi DKI Jakarta, Kode Pos : 12940",
         fullName: "الاسم الكامل",
         company: "الشركة",
         emailPlace: "البريد الإلكتروني",
@@ -972,6 +974,7 @@ const translations = {
         phone: "Telepon",
         email: "Email",
         office: "Kantor",
+        officeAddress: "ITC Kuningan Lantai Dasar Blok F3 No.3 Jl. Prof. Dr. Satrio, Karet Kuningan, Setiabudi, Jakarta Selatan, DKI Jakarta 12940",
         fullName: "Nama Lengkap",
         company: "Perusahaan",
         emailPlace: "Email",
@@ -1008,7 +1011,6 @@ function changeLanguage(lang) {
     document.documentElement.lang = lang;
     document.documentElement.dir = t.dir;
 
-    // Apply translations using data-lang attributes
     document.querySelectorAll("[data-lang]").forEach(el => {
         const key = el.getAttribute("data-lang");
         if (t[key]) {
@@ -1016,7 +1018,6 @@ function changeLanguage(lang) {
         }
     });
 
-    // Form Placeholders translation
     const inputs = document.querySelectorAll("#contactForm input");
     if (inputs.length >= 8) {
         inputs[0].placeholder = t.fullName;
@@ -1031,7 +1032,6 @@ function changeLanguage(lang) {
     const textarea = document.querySelector("#contactForm textarea");
     if (textarea) textarea.placeholder = t.message;
 
-    // Footer Copyright
     const copyright = document.getElementById("copyright");
     if (copyright) {
         copyright.innerHTML = `© ${new Date().getFullYear()} Skyline Global Trade. ${t.rights}`;
@@ -1057,7 +1057,7 @@ if (contactForm) {
         e.preventDefault();
         const inputs = contactForm.querySelectorAll("input, textarea");
         const text = `*NEW TRADE REQUEST*\n\nName: ${inputs[0].value}\nCompany: ${inputs[1].value}\nEmail: ${inputs[2].value}\nPhone: ${inputs[3].value}\nCountry: ${inputs[4].value}\nProduct: ${inputs[5].value}\nQuantity: ${inputs[6].value}\nDestination Port: ${inputs[7].value}\n\nMessage:\n${inputs[8].value}`;
-        window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, "_blank");
+        window.open(`https://wa.me/62816104000?text=${encodeURIComponent(text)}`, "_blank");
     });
 }
 
