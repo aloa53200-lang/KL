@@ -156,24 +156,24 @@
 
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-            <!-- Logo -->
-            <img src="logo.png" class="h-24" alt="Logo">
+            <!-- Logo & Title -->
+            <div class="flex items-center gap-3">
+                <img src="logo.png" class="h-16" alt="Logo">
+                <span class="font-bold text-xl text-gray-900 hidden md:inline" data-lang="siteTitle">Skyline Global Trade</span>
+            </div>
 
-            <!-- Language Buttons -->
-            <div class="flex justify-end gap-2 p-6">
+            <!-- Language Buttons & Mobile Icon -->
+            <div class="flex items-center gap-4">
+                <!-- Phone Icon Added Here -->
+                <a href="tel:+6281234567890" class="text-red-700 text-xl hover:text-red-900 duration-300" title="Call Us">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </a>
 
-                <button class="lang-btn bg-red-700 text-white px-4 py-2 rounded" data-lang="en">
-                    EN
-                </button>
-
-                <button class="lang-btn bg-red-700 text-white px-4 py-2 rounded" data-lang="ar">
-                    AR
-                </button>
-
-                <button class="lang-btn bg-red-700 text-white px-4 py-2 rounded" data-lang="id">
-                    ID
-                </button>
-
+                <div class="flex justify-end gap-2">
+                    <button class="lang-btn bg-red-700 text-white px-3 py-1.5 rounded text-sm font-bold" data-lang="en">EN</button>
+                    <button class="lang-btn bg-red-700 text-white px-3 py-1.5 rounded text-sm font-bold" data-lang="ar">AR</button>
+                    <button class="lang-btn bg-red-700 text-white px-3 py-1.5 rounded text-sm font-bold" data-lang="id">ID</button>
+                </div>
             </div>
 
         </div>
@@ -185,19 +185,19 @@
 
     <div>
 
-        <h1>Your Trusted Partner In Global Trade</h1>
+        <h1 data-lang="heroTitle">Your Trusted Partner In Global Trade</h1>
 
-        <p>
+        <p data-lang="heroDesc">
             Professional import, export, shipping and logistics solutions worldwide.
         </p>
 
         <div class="hero-btn">
 
-            <a href="#contact" class="btn1">
+            <a href="#contact" class="btn1" data-lang="quote">
                 Request Quote
             </a>
 
-            <a href="#services" class="btn2">
+            <a href="#services" class="btn2" data-lang="ourServices">
                 Our Services
             </a>
 
@@ -217,21 +217,21 @@
                 <!-- Text -->
                 <div>
 
-                    <span class="text-red-700 font-bold uppercase tracking-[4px]">
+                    <span class="text-red-700 font-bold uppercase tracking-[4px]" data-lang="aboutSmall">
                         About Skyline
                     </span>
 
-                    <h2 class="text-5xl font-extrabold text-gray-900 mt-3 mb-6"  data-lang="aboutTitle">
+                    <h2 class="text-5xl font-extrabold text-gray-900 mt-3 mb-6" data-lang="aboutTitle">
                         Connecting Businesses
                         <br>
                         Across The World
                     </h2>
 
-                    <p data-lang="aboutText1">
+                    <p data-lang="aboutText1" class="text-gray-600 leading-8 mb-4">
                     Skyline Global Trade is an international trading company specializing in import, export, customs clearance, logistics, and worldwide shipping solutions.
                     </p>
 
-                   <p data-lang="aboutText2">
+                   <p data-lang="aboutText2" class="text-gray-600 leading-8">
                     Our mission is to help companies expand globally through reliable supply chains, competitive pricing, and professional logistics services.
                     </p>
                     <!-- Features -->
@@ -239,22 +239,22 @@
 
                         <div class="flex items-center gap-3">
                             <i class="fas fa-check-circle text-red-700 text-xl"></i>
-                            <span>Reliable Partners</span>
+                            <span data-lang="feature1">Reliable Partners</span>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <i class="fas fa-check-circle text-red-700 text-xl"></i>
-                            <span>Global Network</span>
+                            <span data-lang="feature2">Global Network</span>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <i class="fas fa-check-circle text-red-700 text-xl"></i>
-                            <span>Professional Team</span>
+                            <span data-lang="feature3">Professional Team</span>
                         </div>
 
                         <div class="flex items-center gap-3">
                             <i class="fas fa-check-circle text-red-700 text-xl"></i>
-                            <span>Competitive Prices</span>
+                            <span data-lang="feature4">Competitive Prices</span>
                         </div>
 
                     </div>
@@ -284,11 +284,11 @@
 
             <div class="text-center mb-16">
 
-                <h2 class="text-5xl font-extrabold text-gray-900">
+                <h2 class="text-5xl font-extrabold text-gray-900" data-lang="whyTitle">
                     Why Choose Skyline?
                 </h2>
 
-                <p class="text-gray-500 mt-4">
+                <p class="text-gray-500 mt-4" data-lang="whyDesc">
                     Professional international trading solutions.
                 </p>
 
@@ -301,11 +301,11 @@
 
                     <i class="fas fa-globe text-5xl text-red-700 mb-6"></i>
 
-                    <h3 class="text-2xl font-bold mb-4">
+                    <h3 class="text-2xl font-bold mb-4" data-lang="card1Title">
                         Worldwide Network
                     </h3>
 
-                    <p class="text-gray-600 leading-8">
+                    <p class="text-gray-600 leading-8" data-lang="card1Text">
                         We work with suppliers and buyers across multiple international markets.
                     </p>
 
@@ -316,11 +316,11 @@
 
                     <i class="fas fa-ship text-5xl text-red-700 mb-6"></i>
 
-                    <h3 class="text-2xl font-bold mb-4">
+                    <h3 class="text-2xl font-bold mb-4" data-lang="card2Title">
                         Fast Shipping
                     </h3>
 
-                    <p class="text-gray-600 leading-8">
+                    <p class="text-gray-600 leading-8" data-lang="card2Text">
                         Sea freight and air freight with trusted logistics partners.
                     </p>
 
@@ -331,11 +331,11 @@
 
                     <i class="fas fa-headset text-5xl text-red-700 mb-6"></i>
 
-                    <h3 class="text-2xl font-bold mb-4">
+                    <h3 class="text-2xl font-bold mb-4" data-lang="card3Title">
                         24/7 Support
                     </h3>
 
-                    <p class="text-gray-600 leading-8">
+                    <p class="text-gray-600 leading-8" data-lang="card3Text">
                         Dedicated customer service before and after shipment.
                     </p>
 
@@ -346,65 +346,32 @@
         </div>
 
     </section>
-<!-- ================= STATISTICS ================= -->
-<!-- ================= STATISTICS ================= -->
 
+<!-- ================= STATISTICS ================= -->
 <section class="py-24 bg-red-900 text-white">
 
     <div class="max-w-7xl mx-auto px-6">
 
         <div class="grid md:grid-cols-4 gap-10 text-center">
 
-            <!-- Item 1 -->
             <div>
-
-                <h2 class="text-6xl font-extrabold">
-                    500+
-                </h2>
-
-                <p class="mt-3">
-                    Successful Shipments
-                </p>
-
+                <h2 class="text-6xl font-extrabold">500+</h2>
+                <p class="mt-3" data-lang="stat1">Successful Shipments</p>
             </div>
 
-            <!-- Item 2 -->
             <div>
-
-                <h2 class="text-6xl font-extrabold">
-                    30+
-                </h2>
-
-                <p class="mt-3">
-                    Countries
-                </p>
-
+                <h2 class="text-6xl font-extrabold">30+</h2>
+                <p class="mt-3" data-lang="stat2">Countries</p>
             </div>
 
-            <!-- Item 3 -->
             <div>
-
-                <h2 class="text-6xl font-extrabold">
-                    15+
-                </h2>
-
-                <p class="mt-3">
-                    Years Experience
-                </p>
-
+                <h2 class="text-6xl font-extrabold">15+</h2>
+                <p class="mt-3" data-lang="stat3">Years Experience</p>
             </div>
 
-            <!-- Item 4 -->
             <div>
-
-                <h2 class="text-6xl font-extrabold">
-                    99%
-                </h2>
-
-                <p class="mt-3">
-                    Satisfied Clients
-                </p>
-
+                <h2 class="text-6xl font-extrabold">99%</h2>
+                <p class="mt-3" data-lang="stat4">Satisfied Clients</p>
             </div>
 
         </div>
@@ -421,11 +388,11 @@
 
         <div class="text-center mb-16">
 
-            <h2 class="text-5xl font-extrabold">
+            <h2 class="text-5xl font-extrabold" data-lang="countriesTitle">
                 Countries We Trade With
             </h2>
 
-            <p class="text-gray-500 mt-3">
+            <p class="text-gray-500 mt-3" data-lang="countriesDesc">
                 Building strong international business relationships.
             </p>
 
@@ -433,37 +400,14 @@
 
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
 
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇮🇩 Indonesia
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇸🇦 Saudi Arabia
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇨🇳 China
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇦🇪 UAE
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇲🇾 Malaysia
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇮🇳 India
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🇹🇷 Turkey
-            </div>
-
-            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300">
-                🌍 Worldwide
-            </div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇮🇩 Indonesia</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇸🇦 Saudi Arabia</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇨🇳 China</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇦🇪 UAE</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇲🇾 Malaysia</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇮🇳 India</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🇹🇷 Turkey</div>
+            <div class="border rounded-2xl p-8 text-center hover:bg-red-700 hover:text-white duration-300 font-semibold">🌍 Worldwide</div>
 
         </div>
 
@@ -479,15 +423,15 @@
 
         <div class="text-center mb-16">
 
-            <span class="text-red-700 font-bold tracking-[4px] uppercase">
+            <span class="text-red-700 font-bold tracking-[4px] uppercase" data-lang="servicesSmall">
                 Our Services
             </span>
 
-            <h2 class="text-5xl font-extrabold mt-4">
+            <h2 class="text-5xl font-extrabold mt-4" data-lang="servicesTitle">
                 Complete Trading & Logistics Solutions
             </h2>
 
-            <p class="text-gray-500 mt-5 max-w-3xl mx-auto">
+            <p class="text-gray-500 mt-5 max-w-3xl mx-auto" data-lang="servicesDesc">
                 We provide complete international trading services from sourcing to delivery.
             </p>
 
@@ -495,94 +439,40 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Service 1 -->
             <div class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
-
                 <i class="fas fa-ship text-5xl text-red-700 mb-6"></i>
-
-                <h3 class="text-2xl font-bold mb-4">
-                    Sea Freight
-                </h3>
-
-                <p class="text-gray-600 leading-8">
-                    Reliable international sea freight with competitive shipping rates.
-                </p>
-
+                <h3 class="text-2xl font-bold mb-4" data-lang="sea">Sea Freight</h3>
+                <p class="text-gray-600 leading-8" data-lang="seaDesc">Reliable international sea freight with competitive shipping rates.</p>
             </div>
 
-            <!-- Service 2 -->
             <div class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
-
                 <i class="fas fa-plane text-5xl text-red-700 mb-6"></i>
-
-                <h3 class="text-2xl font-bold mb-4">
-                    Air Freight
-                </h3>
-
-                <p class="text-gray-600 leading-8">
-                    Fast air cargo solutions for urgent shipments worldwide.
-                </p>
-
+                <h3 class="text-2xl font-bold mb-4" data-lang="air">Air Freight</h3>
+                <p class="text-gray-600 leading-8" data-lang="airDesc">Fast air cargo solutions for urgent shipments worldwide.</p>
             </div>
 
-            <!-- Service 3 -->
             <div class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
-
                 <i class="fas fa-file-contract text-5xl text-red-700 mb-6"></i>
-
-                <h3 class="text-2xl font-bold mb-4">
-                    Customs Clearance
-                </h3>
-
-                <p class="text-gray-600 leading-8">
-                    Professional customs documentation and clearance services.
-                </p>
-
+                <h3 class="text-2xl font-bold mb-4" data-lang="customs">Customs Clearance</h3>
+                <p class="text-gray-600 leading-8" data-lang="customsDesc">Professional customs documentation and clearance services.</p>
             </div>
 
-            <!-- Service 4 -->
             <div class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
-
                 <i class="fas fa-warehouse text-5xl text-red-700 mb-6"></i>
-
-                <h3 class="text-2xl font-bold mb-4">
-                    Warehousing
-                </h3>
-
-                <p class="text-gray-600 leading-8">
-                    Modern storage facilities with secure inventory management.
-                </p>
-
+                <h3 class="text-2xl font-bold mb-4" data-lang="warehouse">Warehousing</h3>
+                <p class="text-gray-600 leading-8" data-lang="warehouseDesc">Modern storage facilities with secure inventory management.</p>
             </div>
 
-            <!-- Service 5 -->
             <div class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
-
                 <i class="fas fa-truck text-5xl text-red-700 mb-6"></i>
-
-                <h3 class="text-2xl font-bold mb-4">
-                    Inland Transport
-                </h3>
-
-                <p class="text-gray-600 leading-8">
-                    Efficient trucking and inland transportation solutions.
-                </p>
-
+                <h3 class="text-2xl font-bold mb-4" data-lang="truck">Inland Transport</h3>
+                <p class="text-gray-600 leading-8" data-lang="truckDesc">Efficient trucking and inland transportation solutions.</p>
             </div>
 
-            <!-- Service 6 -->
             <div class="bg-white rounded-3xl p-10 shadow-lg hover:-translate-y-3 hover:shadow-2xl duration-300">
-
                 <i class="fas fa-globe text-5xl text-red-700 mb-6"></i>
-
-                <h3 class="text-2xl font-bold mb-4">
-                    Import & Export
-                </h3>
-
-                <p class="text-gray-600 leading-8">
-                    Complete import and export management for international business.
-                </p>
-
+                <h3 class="text-2xl font-bold mb-4" data-lang="importExport">Import & Export</h3>
+                <p class="text-gray-600 leading-8" data-lang="importExportDesc">Complete import and export management for international business.</p>
             </div>
 
         </div>
@@ -590,6 +480,7 @@
     </div>
 
 </section>
+
 <!-- ================= PRODUCTS ================= -->
 
 <section id="products" class="py-24 bg-white">
@@ -598,16 +489,12 @@
 
 <div class="text-center mb-16">
 
-<span class="text-red-700 font-bold uppercase tracking-[4px]">
-
+<span class="text-red-700 font-bold uppercase tracking-[4px]" data-lang="productsSmall">
 Products
-
 </span>
 
-<h2 class="text-5xl font-extrabold mt-4">
-
+<h2 class="text-5xl font-extrabold mt-4" data-lang="productsTitle">
 Our Main Products
-
 </h2>
 
 </div>
@@ -615,93 +502,35 @@ Our Main Products
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
 <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
-
-<img src="images/charcoal.jpg"
-     alt="Coconut Charcoal"
-     class="w-full h-60 object-cover">
-
+<img src="images/charcoal.jpg" alt="Coconut Charcoal" class="w-full h-60 object-cover">
 <div class="p-6">
-
-<h3 class="font-bold text-xl">
-
-Coconut Charcoal
-
-</h3>
-
-<p class="text-gray-500 mt-3">
-
-Premium coconut shell charcoal for BBQ and Shisha.
-
-</p>
-
+<h3 class="font-bold text-xl" data-lang="charcoal">Coconut Charcoal</h3>
+<p class="text-gray-500 mt-3" data-lang="charcoalDesc">Premium coconut shell charcoal for BBQ and Shisha.</p>
 </div>
-
 </div>
 
 <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
-
-<img src="images/stone.jpg" class="w-full h-60 object-cover">
-
+<img src="images/stone.jpg" alt="Natural Stone" class="w-full h-60 object-cover">
 <div class="p-6">
-
-<h3 class="font-bold text-xl">
-
-Natural Stone
-
-</h3>
-
-<p class="text-gray-500 mt-3">
-
-Granite, Marble, Onyx and premium natural stones.
-
-</p>
-
+<h3 class="font-bold text-xl" data-lang="stone">Natural Stone</h3>
+<p class="text-gray-500 mt-3" data-lang="stoneDesc">Granite, Marble, Onyx and premium natural stones.</p>
 </div>
-
 </div>
 
 <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
-
-<img src="images/textile.jpg" class="w-full h-60 object-cover">
-
+<img src="images/textile.jpg" alt="Textile" class="w-full h-60 object-cover">
 <div class="p-6">
-
-<h3 class="font-bold text-xl">
-
-Textile
-
-</h3>
-
-<p class="text-gray-500 mt-3">
-
-High-quality fabrics for fashion and industry.
-
-</p>
-
+<h3 class="font-bold text-xl" data-lang="textile">Textile</h3>
+<p class="text-gray-500 mt-3" data-lang="textileDesc">High-quality fabrics for fashion and industry.</p>
 </div>
-
 </div>
 
 <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl duration-300">
-
-<img src="images/coffee.jpg" class="w-full h-60 object-cover">
-
+<img src="images/coffee.jpg" alt="Coffee Beans" class="w-full h-60 object-cover">
 <div class="p-6">
-
-<h3 class="font-bold text-xl">
-
-Coffee Beans
-
-</h3>
-
-<p class="text-gray-500 mt-3">
-
-Premium Indonesian coffee beans for export.
-
-</p>
-
+<h3 class="font-bold text-xl" data-lang="coffee">Coffee Beans</h3>
+<p class="text-gray-500 mt-3" data-lang="coffeeDesc">Premium Indonesian coffee beans for export.</p>
 </div>
-
 </div>
 
 </div>
@@ -718,22 +547,17 @@ Premium Indonesian coffee beans for export.
 
 <div class="text-center mb-16">
 
-<span class="text-red-700 font-bold uppercase tracking-[4px]">
-
+<span class="text-red-700 font-bold uppercase tracking-[4px]" data-lang="gallerySmall">
 Gallery
-
 </span>
 
-<h2 class="text-5xl font-extrabold mt-4">
-
+<h2 class="text-5xl font-extrabold mt-4" data-lang="galleryTitle">
 Our Business Activities
-
 </h2>
 
 </div>
 
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
 <img src="images/gallery1.jpg" alt="Gallery 1" class="rounded-3xl shadow-lg hover:scale-105 duration-300">
 <img src="images/gallery2.jpg" alt="Gallery 2" class="rounded-3xl shadow-lg hover:scale-105 duration-300">
 <img src="images/gallery3.jpg" alt="Gallery 3" class="rounded-3xl shadow-lg hover:scale-105 duration-300">
@@ -745,6 +569,7 @@ Our Business Activities
 </div>
 
 </section>
+
 <!-- ================= CONTACT ================= -->
 
 <section id="contact" class="py-24 bg-white">
@@ -753,106 +578,50 @@ Our Business Activities
 
 <div class="grid lg:grid-cols-2 gap-16">
 
-<!-- Contact Info -->
-
 <div>
 
-<span class="text-red-700 font-bold uppercase tracking-[4px]">
-
+<span class="text-red-700 font-bold uppercase tracking-[4px]" data-lang="contactSmall">
 Contact Us
-
 </span>
 
-<h2 class="text-5xl font-extrabold mt-4 mb-8">
-
+<h2 class="text-5xl font-extrabold mt-4 mb-8" data-lang="contactTitle">
 Request A Quote
-
 </h2>
 
-<p class="text-gray-600 leading-8 mb-10">
-
+<p class="text-gray-600 leading-8 mb-10" data-lang="contactDesc">
 Contact Skyline Global Trade today for import, export, shipping and logistics solutions.
-
 </p>
 
 <div class="space-y-6">
 
 <div class="flex items-center gap-5">
-
 <div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center">
-
 <i class="fas fa-phone"></i>
-
 </div>
-
 <div>
-
-<h4 class="font-bold">
-
-Phone
-
-</h4>
-
-<p>
-
-+62 812-3456-7890
-
-</p>
-
+<h4 class="font-bold" data-lang="phone">Phone</h4>
+<p>+62 812-3456-7890</p>
 </div>
-
 </div>
 
 <div class="flex items-center gap-5">
-
 <div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center">
-
 <i class="fas fa-envelope"></i>
-
 </div>
-
 <div>
-
-<h4 class="font-bold">
-
-Email
-
-</h4>
-
-<p>
-
-info@skylineglobaltrade.com
-
-</p>
-
+<h4 class="font-bold" data-lang="email">Email</h4>
+<p>info@skylineglobaltrade.com</p>
 </div>
-
 </div>
 
 <div class="flex items-center gap-5">
-
 <div class="w-14 h-14 rounded-full bg-red-700 text-white flex items-center justify-center">
-
 <i class="fas fa-location-dot"></i>
-
 </div>
-
 <div>
-
-<h4 class="font-bold">
-
-Office
-
-</h4>
-
-<p>
-
-Jakarta, Indonesia
-
-</p>
-
+<h4 class="font-bold" data-lang="office">Office</h4>
+<p>Jakarta, Indonesia</p>
 </div>
-
 </div>
 
 </div>
@@ -866,53 +635,18 @@ Jakarta, Indonesia
 <form id="contactForm" class="bg-gray-100 rounded-3xl p-10 shadow-xl">
 <div class="grid md:grid-cols-2 gap-5">
 
-<input
-type="text"
-placeholder="Full Name"
-class="p-4 rounded-xl">
+<input type="text" placeholder="Full Name" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="text" placeholder="Company" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="email" placeholder="Email" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="text" placeholder="Phone" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="text" placeholder="Country" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="text" placeholder="Product" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="text" placeholder="Quantity" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
+<input type="text" placeholder="Destination Port" class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700">
 
-<input
-type="text"
-placeholder="Company"
-class="p-4 rounded-xl">
+<textarea rows="6" placeholder="Your Message" class="md:col-span-2 p-4 rounded-xl border border-gray-300 focus:outline-none focus:border-red-700"></textarea>
 
-<input
-type="email"
-placeholder="Email"
-class="p-4 rounded-xl">
-
-<input
-type="text"
-placeholder="Phone"
-class="p-4 rounded-xl">
-
-<input
-type="text"
-placeholder="Country"
-class="p-4 rounded-xl">
-
-<input
-type="text"
-placeholder="Product"
-class="p-4 rounded-xl">
-
-<input
-type="text"
-placeholder="Quantity"
-class="p-4 rounded-xl">
-
-<input
-type="text"
-placeholder="Destination Port"
-class="p-4 rounded-xl">
-
-<textarea
-rows="6"
-placeholder="Your Message"
-class="md:col-span-2 p-4 rounded-xl"></textarea>
-
-<button id="sendBtn"
-class="md:col-span-2 bg-red-700 text-white py-4 rounded-xl font-bold">
+<button id="sendBtn" class="md:col-span-2 bg-red-700 text-white py-4 rounded-xl font-bold hover:bg-red-800 duration-300">
 Send Request
 </button>
 
@@ -937,96 +671,48 @@ Send Request
 <div class="grid lg:grid-cols-4 gap-10">
 
 <div>
-
-<img
-    src="logo.png"
-    alt="Skyline Global Trade Logo"
-    class="h-24 mb-5">
-
-<p class="text-gray-400 leading-8">
-
+<img src="logo.png" alt="Skyline Global Trade Logo" class="h-24 mb-5">
+<p class="text-gray-400 leading-8" data-lang="footerDesc">
 Skyline Global Trade is your trusted international trading partner.
-
 </p>
-
 </div>
 
 <div>
-
-<h3 class="font-bold text-xl mb-6">
-
-Company
-
-</h3>
-
+<h3 class="font-bold text-xl mb-6" data-lang="footerCompany">Company</h3>
 <ul class="space-y-3 text-gray-400">
-
-<li><a href="#about">About Us</a></li>
-
-<li><a href="#services">Services</a></li>
-
-<li><a href="#products">Products</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
+<li><a href="#about" data-lang="fAbout">About Us</a></li>
+<li><a href="#services" data-lang="fServices">Services</a></li>
+<li><a href="#products" data-lang="fProducts">Products</a></li>
+<li><a href="#contact" data-lang="fContact">Contact</a></li>
 </ul>
-
 </div>
 
 <div>
-
-<h3 class="font-bold text-xl mb-6">
-
-Services
-
-</h3>
-
+<h3 class="font-bold text-xl mb-6" data-lang="footerServices">Services</h3>
 <ul class="space-y-3 text-gray-400">
-
-<li>Import</li>
-
-<li>Export</li>
-
-<li>Sea Freight</li>
-
-<li>Air Freight</li>
-
-<li>Logistics</li>
-
-<li>Customs Clearance</li>
-
+<li data-lang="s1">Import</li>
+<li data-lang="s2">Export</li>
+<li data-lang="s3">Sea Freight</li>
+<li data-lang="s4">Air Freight</li>
+<li data-lang="s5">Logistics</li>
+<li data-lang="s6">Customs Clearance</li>
 </ul>
-
 </div>
 
 <div>
-
-<h3 class="font-bold text-xl mb-6">
-
-Follow Us
-
-</h3>
-
+<h3 class="font-bold text-xl mb-6" data-lang="follow">Follow Us</h3>
 <div class="flex gap-4 text-2xl">
-
-<a href="#"><i class="fab fa-facebook"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fab fa-youtube"></i></a>
-
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-
+<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-facebook"></i></a>
+<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-instagram"></i></a>
+<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-linkedin"></i></a>
+<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-youtube"></i></a>
+<a href="#" class="hover:text-red-500 duration-300"><i class="fab fa-whatsapp"></i></a>
+</div>
 </div>
 
 </div>
 
-</div>
-
-<div id="copyright"
-class="border-t border-gray-700 mt-14 py-8 text-center text-gray-500">
+<div id="copyright" class="border-t border-gray-700 mt-14 py-8 text-center text-gray-500">
 © 2026 Skyline Global Trade. All Rights Reserved.
 </div>
 
@@ -1035,285 +721,327 @@ class="border-t border-gray-700 mt-14 py-8 text-center text-gray-500">
 </footer>
 
 <!-- Scroll To Top -->
-
-<button
-id="scrollTop"
-class="fixed bottom-24 right-6 w-14 h-14 rounded-full bg-red-700 text-white shadow-xl hidden">
-
+<button id="scrollTop" class="fixed bottom-24 right-6 w-14 h-14 rounded-full bg-red-700 text-white shadow-xl hidden items-center justify-center">
 <i class="fas fa-arrow-up"></i>
-
 </button>
 
-<!-- WhatsApp -->
-
-<a
-
-href="https://wa.me/6281234567890"
-
-target="_blank"
-
-class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 duration-300">
-
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 duration-300 z-50">
 <i class="fab fa-whatsapp"></i>
-
 </a>
+
 <script>
 
-// ================= LANGUAGE SYSTEM =================
-
+// ================= LANGUAGE DICTIONARY =================
 const translations = {
-
-en:{
-
-dir:"ltr",
-
-heroTitle:"Your Trusted Partner In Global Trade",
-heroDesc:"Professional import, export, shipping and logistics solutions worldwide.",
-
-quote:"Request Quote",
-ourServices:"Our Services",
-
-aboutSmall:"About Skyline",
-aboutTitle:"Connecting Businesses <br> Across The World",
-
-aboutText1:"Skyline Global Trade is an international trading company specializing in import, export, customs clearance, logistics, and worldwide shipping solutions.",
-
-aboutText2:"Our mission is to help companies expand globally through reliable supply chains, competitive pricing, and professional logistics services.",
-
-feature1:"Reliable Partners",
-feature2:"Global Network",
-feature3:"Professional Team",
-feature4:"Competitive Prices",
-
-whyTitle:"Why Choose Skyline?",
-whyDesc:"Professional international trading solutions.",
-
-card1Title:"Worldwide Network",
-card1Text:"We work with suppliers and buyers across multiple international markets.",
-
-card2Title:"Fast Shipping",
-card2Text:"Sea freight and air freight with trusted logistics partners.",
-
-card3Title:"24/7 Support",
-card3Text:"Dedicated customer service before and after shipment.",
-
-stat1:"Successful Shipments",
-stat2:"Countries",
-stat3:"Years Experience",
-stat4:"Satisfied Clients",
-
-countriesTitle:"Countries We Trade With",
-countriesDesc:"Building strong international business relationships.",
-
-servicesSmall:"Our Services",
-servicesTitle:"Complete Trading & Logistics Solutions",
-servicesDesc:"We provide complete international trading services from sourcing to delivery.",
-
-sea:"Sea Freight",
-seaDesc:"Reliable international sea freight with competitive shipping rates.",
-
-air:"Air Freight",
-airDesc:"Fast air cargo solutions for urgent shipments worldwide.",
-
-customs:"Customs Clearance",
-customsDesc:"Professional customs documentation and clearance services.",
-
-warehouse:"Warehousing",
-warehouseDesc:"Modern storage facilities with secure inventory management.",
-
-truck:"Inland Transport",
-truckDesc:"Efficient trucking and inland transportation solutions.",
-
-importExport:"Import & Export",
-importExportDesc:"Complete import and export management for international business.",
-
-productsSmall:"Products",
-productsTitle:"Our Main Products",
-
-charcoal:"Coconut Charcoal",
-charcoalDesc:"Premium coconut shell charcoal for BBQ and Shisha.",
-
-stone:"Natural Stone",
-stoneDesc:"Granite, Marble, Onyx and premium natural stones.",
-
-textile:"Textile",
-textileDesc:"High-quality fabrics for fashion and industry.",
-
-coffee:"Coffee Beans",
-coffeeDesc:"Premium Indonesian coffee beans for export.",
-
-gallerySmall:"Gallery",
-galleryTitle:"Our Business Activities",
-
-contactSmall:"Contact Us",
-contactTitle:"Request A Quote",
-contactDesc:"Contact Skyline Global Trade today for import, export, shipping and logistics solutions.",
-
-phone:"Phone",
-email:"Email",
-office:"Office",
-
-fullName:"Full Name",
-company:"Company",
-emailPlace:"Email",
-phonePlace:"Phone",
-country:"Country",
-product:"Product",
-quantity:"Quantity",
-port:"Destination Port",
-message:"Your Message",
-
-send:"Send Request",
-
-footerCompany:"Company",
-footerServices:"Services",
-follow:"Follow Us",
-
-rights:"All Rights Reserved"
-
-},
-
-ar:{
-
-dir:"rtl",
-
-heroTitle:"شريكك الموثوق في التجارة العالمية",
-heroDesc:"نوفر حلول الاستيراد والتصدير والشحن والخدمات اللوجستية حول العالم.",
-
-quote:"طلب عرض سعر",
-ourServices:"خدماتنا",
-
-aboutSmall:"من نحن",
-aboutTitle:"نربط الشركات حول العالم",
-
-aboutText1:"شركة Skyline Global Trade متخصصة في التجارة الدولية والاستيراد والتصدير والتخليص الجمركي والخدمات اللوجستية.",
-
-aboutText2:"نساعد الشركات على التوسع عالمياً عبر حلول احترافية وسلاسل إمداد موثوقة.",
-
-feature1:"شركاء موثوقون",
-feature2:"شبكة عالمية",
-feature3:"فريق محترف",
-feature4:"أسعار تنافسية",
-
-whyTitle:"لماذا تختار Skyline؟",
-whyDesc:"حلول احترافية للتجارة الدولية.",
-
-card1Title:"شبكة عالمية",
-card1Text:"نتعامل مع الموردين والمشترين في مختلف دول العالم.",
-
-card2Title:"شحن سريع",
-card2Text:"شحن بحري وجوي مع أفضل شركات الخدمات اللوجستية.",
-
-card3Title:"دعم 24/7",
-card3Text:"خدمة عملاء قبل وبعد الشحن.",
-
-stat1:"شحنة ناجحة",
-stat2:"دولة",
-stat3:"سنوات خبرة",
-stat4:"عملاء راضون",
-
-countriesTitle:"الدول التي نتعامل معها",
-countriesDesc:"نبني علاقات تجارية قوية حول العالم.",
-
-servicesSmall:"خدماتنا",
-servicesTitle:"حلول متكاملة للتجارة والخدمات اللوجستية",
-servicesDesc:"نوفر جميع خدمات التجارة الدولية من التوريد وحتى التسليم.",
-
-sea:"الشحن البحري",
-seaDesc:"حلول شحن بحري موثوقة بأسعار تنافسية.",
-
-air:"الشحن الجوي",
-airDesc:"حلول شحن جوي سريعة للشحنات العاجلة.",
-
-customs:"التخليص الجمركي",
-customsDesc:"خدمات احترافية لإنهاء الإجراءات الجمركية.",
-
-warehouse:"التخزين",
-warehouseDesc:"مستودعات حديثة وآمنة.",
-
-truck:"النقل البري",
-truckDesc:"حلول نقل بري فعالة.",
-
-importExport:"الاستيراد والتصدير",
-importExportDesc:"إدارة كاملة لعمليات الاستيراد والتصدير.",
-
-productsSmall:"المنتجات",
-productsTitle:"أهم منتجاتنا",
-
-charcoal:"فحم جوز الهند",
-charcoalDesc:"فحم فاخر للشواء والشيشة.",
-
-stone:"الأحجار الطبيعية",
-stoneDesc:"جرانيت ورخام وأونيكس.",
-
-textile:"الأقمشة",
-textileDesc:"أقمشة عالية الجودة.",
-
-coffee:"حبوب القهوة",
-coffeeDesc:"قهوة إندونيسية ممتازة للتصدير.",
-
-gallerySmall:"المعرض",
-galleryTitle:"أنشطتنا التجارية",
-
-contactSmall:"تواصل معنا",
-contactTitle:"اطلب عرض سعر",
-contactDesc:"تواصل معنا اليوم للحصول على أفضل حلول التجارة والشحن.",
-
-phone:"الهاتف",
-email:"البريد الإلكتروني",
-office:"المكتب",
-
-fullName:"الاسم الكامل",
-company:"الشركة",
-emailPlace:"البريد الإلكتروني",
-phonePlace:"رقم الهاتف",
-country:"الدولة",
-product:"المنتج",
-quantity:"الكمية",
-port:"ميناء الوصول",
-message:"اكتب رسالتك",
-
-send:"إرسال الطلب",
-
-footerCompany:"الشركة",
-footerServices:"الخدمات",
-follow:"تابعنا",
-
-rights:"جميع الحقوق محفوظة"
-
-},
-
-id:{
-
-dir:"ltr",
-
-heroTitle:"Mitra Terpercaya Dalam Perdagangan Global",
-heroDesc:"Solusi impor, ekspor, pengiriman dan logistik profesional.",
-
-quote:"Minta Penawaran",
-ourServices:"Layanan Kami",
-
-aboutSmall:"Tentang Kami",
-aboutTitle:"Menghubungkan Bisnis Ke Seluruh Dunia",
-
-aboutText1:"Skyline Global Trade adalah perusahaan perdagangan internasional yang bergerak di bidang impor, ekspor, logistik dan bea cukai.",
-
-aboutText2:"Kami membantu perusahaan berkembang secara global melalui solusi profesional.",
-
-feature1:"Mitra Terpercaya",
-feature2:"Jaringan Global",
-feature3:"Tim Profesional",
-feature4:"Harga Kompetitif"
-
+    en: {
+        dir: "ltr",
+        siteTitle: "Skyline Global Trade",
+        heroTitle: "Your Trusted Partner In Global Trade",
+        heroDesc: "Professional import, export, shipping and logistics solutions worldwide.",
+        quote: "Request Quote",
+        ourServices: "Our Services",
+        aboutSmall: "About Skyline",
+        aboutTitle: "Connecting Businesses <br> Across The World",
+        aboutText1: "Skyline Global Trade is an international trading company specializing in import, export, customs clearance, logistics, and worldwide shipping solutions.",
+        aboutText2: "Our mission is to help companies expand globally through reliable supply chains, competitive pricing, and professional logistics services.",
+        feature1: "Reliable Partners",
+        feature2: "Global Network",
+        feature3: "Professional Team",
+        feature4: "Competitive Prices",
+        whyTitle: "Why Choose Skyline?",
+        whyDesc: "Professional international trading solutions.",
+        card1Title: "Worldwide Network",
+        card1Text: "We work with suppliers and buyers across multiple international markets.",
+        card2Title: "Fast Shipping",
+        card2Text: "Sea freight and air freight with trusted logistics partners.",
+        card3Title: "24/7 Support",
+        card3Text: "Dedicated customer service before and after shipment.",
+        stat1: "Successful Shipments",
+        stat2: "Countries",
+        stat3: "Years Experience",
+        stat4: "Satisfied Clients",
+        countriesTitle: "Countries We Trade With",
+        countriesDesc: "Building strong international business relationships.",
+        servicesSmall: "Our Services",
+        servicesTitle: "Complete Trading & Logistics Solutions",
+        servicesDesc: "We provide complete international trading services from sourcing to delivery.",
+        sea: "Sea Freight",
+        seaDesc: "Reliable international sea freight with competitive shipping rates.",
+        air: "Air Freight",
+        airDesc: "Fast air cargo solutions for urgent shipments worldwide.",
+        customs: "Customs Clearance",
+        customsDesc: "Professional customs documentation and clearance services.",
+        warehouse: "Warehousing",
+        warehouseDesc: "Modern storage facilities with secure inventory management.",
+        truck: "Inland Transport",
+        truckDesc: "Efficient trucking and inland transportation solutions.",
+        importExport: "Import & Export",
+        importExportDesc: "Complete import and export management for international business.",
+        productsSmall: "Products",
+        productsTitle: "Our Main Products",
+        charcoal: "Coconut Charcoal",
+        charcoalDesc: "Premium coconut shell charcoal for BBQ and Shisha.",
+        stone: "Natural Stone",
+        stoneDesc: "Granite, Marble, Onyx and premium natural stones.",
+        textile: "Textile",
+        textileDesc: "High-quality fabrics for fashion and industry.",
+        coffee: "Coffee Beans",
+        coffeeDesc: "Premium Indonesian coffee beans for export.",
+        gallerySmall: "Gallery",
+        galleryTitle: "Our Business Activities",
+        contactSmall: "Contact Us",
+        contactTitle: "Request A Quote",
+        contactDesc: "Contact Skyline Global Trade today for import, export, shipping and logistics solutions.",
+        phone: "Phone",
+        email: "Email",
+        office: "Office",
+        fullName: "Full Name",
+        company: "Company",
+        emailPlace: "Email",
+        phonePlace: "Phone",
+        country: "Country",
+        product: "Product",
+        quantity: "Quantity",
+        port: "Destination Port",
+        message: "Your Message",
+        send: "Send Request",
+        footerDesc: "Skyline Global Trade is your trusted international trading partner.",
+        footerCompany: "Company",
+        fAbout: "About Us",
+        fServices: "Services",
+        fProducts: "Products",
+        fContact: "Contact",
+        footerServices: "Services",
+        s1: "Import",
+        s2: "Export",
+        s3: "Sea Freight",
+        s4: "Air Freight",
+        s5: "Logistics",
+        s6: "Customs Clearance",
+        follow: "Follow Us",
+        rights: "All Rights Reserved"
+    },
+    ar: {
+        dir: "rtl",
+        siteTitle: "سكاي لاين للتجارة العالمية",
+        heroTitle: "شريكك الموثوق في التجارة العالمية",
+        heroDesc: "نوفر حلول الاستيراد والتصدير والشحن والخدمات اللوجستية حول العالم.",
+        quote: "طلب عرض سعر",
+        ourServices: "خدماتنا",
+        aboutSmall: "من نحن",
+        aboutTitle: "نربط الشركات حول العالم",
+        aboutText1: "شركة Skyline Global Trade متخصصة في التجارة الدولية والاستيراد والتصدير والتخليص الجمركي والخدمات اللوجستية.",
+        aboutText2: "نساعد الشركات على التوسع عالمياً عبر حلول احترافية وسلاسل إمداد موثوقة.",
+        feature1: "شركاء موثوقون",
+        feature2: "شبكة عالمية",
+        feature3: "فريق محترف",
+        feature4: "أسعار تنافسية",
+        whyTitle: "لماذا تختار Skyline؟",
+        whyDesc: "حلول احترافية للتجارة الدولية.",
+        card1Title: "شبكة عالمية",
+        card1Text: "نتعامل مع الموردين والمشترين في مختلف دول العالم.",
+        card2Title: "شحن سريع",
+        card2Text: "شحن بحري وجوي مع أفضل شركات الخدمات اللوجستية.",
+        card3Title: "دعم 24/7",
+        card3Text: "خدمة عملاء قبل وبعد الشحن.",
+        stat1: "شحنة ناجحة",
+        stat2: "دولة",
+        stat3: "سنوات خبرة",
+        stat4: "عملاء راضون",
+        countriesTitle: "الدول التي نتعامل معها",
+        countriesDesc: "نبني علاقات تجارية قوية حول العالم.",
+        servicesSmall: "خدماتنا",
+        servicesTitle: "حلول متكاملة للتجارة والخدمات اللوجستية",
+        servicesDesc: "نوفر جميع خدمات التجارة الدولية من التوريد وحتى التسليم.",
+        sea: "الشحن البحري",
+        seaDesc: "حلول شحن بحري موثوقة بأسعار تنافسية.",
+        air: "الشحن الجوي",
+        airDesc: "حلول شحن جوي سريعة للشحنات العاجلة.",
+        customs: "التخليص الجمركي",
+        customsDesc: "خدمات احترافية لإنهاء الإجراءات الجمركية.",
+        warehouse: "التخزين",
+        warehouseDesc: "مستودعات حديثة وآمنة.",
+        truck: "النقل البري",
+        truckDesc: "حلول نقل بري فعالة.",
+        importExport: "الاستيراد والتصدير",
+        importExportDesc: "إدارة كاملة لعمليات الاستيراد والتصدير.",
+        productsSmall: "المنتجات",
+        productsTitle: "أهم منتجاتنا",
+        charcoal: "فحم جوز الهند",
+        charcoalDesc: "فحم فاخر للشواء والشيشة.",
+        stone: "الأحجار الطبيعية",
+        stoneDesc: "جرانيت ورخام وأونيكس.",
+        textile: "الأقمشة",
+        textileDesc: "أقمشة عالية الجودة.",
+        coffee: "حبوب القهوة",
+        coffeeDesc: "قهوة إندونيسية ممتازة للتصدير.",
+        gallerySmall: "المعرض",
+        galleryTitle: "أنشطتنا التجارية",
+        contactSmall: "تواصل معنا",
+        contactTitle: "اطلب عرض سعر",
+        contactDesc: "تواصل معنا اليوم للحصول على أفضل حلول التجارة والشحن.",
+        phone: "الهاتف",
+        email: "البريد الإلكتروني",
+        office: "المكتب",
+        fullName: "الاسم الكامل",
+        company: "الشركة",
+        emailPlace: "البريد الإلكتروني",
+        phonePlace: "رقم الهاتف",
+        country: "الدولة",
+        product: "المنتج",
+        quantity: "الكمية",
+        port: "ميناء الوصول",
+        message: "اكتب رسالتك",
+        send: "إرسال الطلب",
+        footerDesc: "سكاي لاين للتجارة العالمية هي شريكك التجاري الدولي الموثوق.",
+        footerCompany: "الشركة",
+        fAbout: "من نحن",
+        fServices: "الخدمات",
+        fProducts: "المنتجات",
+        fContact: "اتصل بنا",
+        footerServices: "الخدمات",
+        s1: "استيراد",
+        s2: "تصدير",
+        s3: "شحن بحري",
+        s4: "شحن جوي",
+        s5: "خدمات لوجستية",
+        s6: "تخليص جمركي",
+        follow: "تابعنا",
+        rights: "جميع الحقوق محفوظة"
+    },
+    id: {
+        dir: "ltr",
+        siteTitle: "Skyline Global Trade",
+        heroTitle: "Mitra Terpercaya Dalam Perdagangan Global",
+        heroDesc: "Solusi impor, ekspor, pengiriman dan logistik profesional di seluruh dunia.",
+        quote: "Minta Penawaran",
+        ourServices: "Layanan Kami",
+        aboutSmall: "Tentang Kami",
+        aboutTitle: "Menghubungkan Bisnis <br> Ke Seluruh Dunia",
+        aboutText1: "Skyline Global Trade adalah perusahaan perdagangan internasional yang bergerak di bidang impor, ekspor, bea cukai, logistik, dan solusi pengiriman.",
+        aboutText2: "Misi kami adalah membantu perusahaan berkembang secara global melalui rantai pasokan yang andal dan layanan profesional.",
+        feature1: "Mitra Terpercaya",
+        feature2: "Jaringan Global",
+        feature3: "Tim Profesional",
+        feature4: "Harga Kompetitif",
+        whyTitle: "Mengapa Memilih Skyline?",
+        whyDesc: "Solusi perdagangan internasional profesional.",
+        card1Title: "Jaringan Global",
+        card1Text: "Kami bekerja dengan pemasok dan pembeli di berbagai pasar internasional.",
+        card2Title: "Pengiriman Cepat",
+        card2Text: "Pengiriman laut dan udara dengan mitra logistik terpercaya.",
+        card3Title: "Dukungan 24/7",
+        card3Text: "Layanan pelanggan khusus sebelum dan sesudah pengiriman.",
+        stat1: "Pengiriman Sukses",
+        stat2: "Negara",
+        stat3: "Tahun Pengalaman",
+        stat4: "Klien Puas",
+        countriesTitle: "Negara Tempat Kami Berdagang",
+        countriesDesc: "Membangun hubungan bisnis internasional yang kuat.",
+        servicesSmall: "Layanan Kami",
+        servicesTitle: "Solusi Perdagangan & Logistik Lengkap",
+        servicesDesc: "Kami menyediakan layanan perdagangan internasional lengkap mulai dari sumber hingga pengiriman.",
+        sea: "Angkutan Laut",
+        seaDesc: "Angkutan laut internasional yang andal dengan tarif kompetitif.",
+        air: "Angkutan Udara",
+        airDesc: "Solusi kargo udara cepat untuk pengiriman mendesak di seluruh dunia.",
+        customs: "Pabean & Bea Cukai",
+        customsDesc: "Layanan dokumentasi dan izin pabean profesional.",
+        warehouse: "Pergudangan",
+        warehouseDesc: "Fasilitas penyimpanan modern dengan manajemen inventaris yang aman.",
+        truck: "Transportasi Darat",
+        truckDesc: "Solusi truk dan transportasi darat yang efisien.",
+        importExport: "Impor & Ekspor",
+        importExportDesc: "Manajemen impor dan ekspor lengkap untuk bisnis internasional.",
+        productsSmall: "Produk",
+        productsTitle: "Produk Utama Kami",
+        charcoal: "Arang Kelapa",
+        charcoalDesc: "Arang tempurung kelapa premium untuk BBQ dan Sisha.",
+        stone: "Batu Alam",
+        stoneDesc: "Granit, Marmer, Onyx, dan batu alam pilihan.",
+        textile: "Tekstil",
+        textileDesc: "Kain berkualitas tinggi untuk fashion dan industri.",
+        coffee: "Biji Kopi",
+        coffeeDesc: "Biji kopi Indonesia premium untuk diekspor.",
+        gallerySmall: "Galeri",
+        galleryTitle: "Aktivitas Bisnis Kami",
+        contactSmall: "Hubungi Kami",
+        contactTitle: "Minta Penawaran",
+        contactDesc: "Hubungi Skyline Global Trade hari ini untuk solusi impor, ekspor, dan logistik.",
+        phone: "Telepon",
+        email: "Email",
+        office: "Kantor",
+        fullName: "Nama Lengkap",
+        company: "Perusahaan",
+        emailPlace: "Email",
+        phonePlace: "Telepon",
+        country: "Negara",
+        product: "Produk",
+        quantity: "Kuantitas",
+        port: "Pelabuhan Tujuan",
+        message: "Pesan Anda",
+        send: "Kirim Permintaan",
+        footerDesc: "Skyline Global Trade adalah mitra perdagangan internasional terpercaya Anda.",
+        footerCompany: "Perusahaan",
+        fAbout: "Tentang Kami",
+        fServices: "Layanan",
+        fProducts: "Produk",
+        fContact: "Kontak",
+        footerServices: "Layanan",
+        s1: "Impor",
+        s2: "Ekspor",
+        s3: "Angkutan Laut",
+        s4: "Angkutan Udara",
+        s5: "Logistik",
+        s6: "Bea Cukai",
+        follow: "Ikuti Kami",
+        rights: "Hak Cipta Dilindungi"
+    }
+};
+
+// ================= LANGUAGE SYSTEM RUNNER =================
+function changeLanguage(lang) {
+    const t = translations[lang];
+    if (!t) return;
+
+    document.documentElement.lang = lang;
+    document.documentElement.dir = t.dir;
+
+    // Apply translations using data-lang attributes
+    document.querySelectorAll("[data-lang]").forEach(el => {
+        const key = el.getAttribute("data-lang");
+        if (t[key]) {
+            el.innerHTML = t[key];
+        }
+    });
+
+    // Form Placeholders translation
+    const inputs = document.querySelectorAll("#contactForm input");
+    if (inputs.length >= 8) {
+        inputs[0].placeholder = t.fullName;
+        inputs[1].placeholder = t.company;
+        inputs[2].placeholder = t.emailPlace;
+        inputs[3].placeholder = t.phonePlace;
+        inputs[4].placeholder = t.country;
+        inputs[5].placeholder = t.product;
+        inputs[6].placeholder = t.quantity;
+        inputs[7].placeholder = t.port;
+    }
+    const textarea = document.querySelector("#contactForm textarea");
+    if (textarea) textarea.placeholder = t.message;
+
+    // Footer Copyright
+    const copyright = document.getElementById("copyright");
+    if (copyright) {
+        copyright.innerHTML = `© ${new Date().getFullYear()} Skyline Global Trade. ${t.rights}`;
+    }
+
+    localStorage.setItem("skyline_lang", lang);
 }
 
-};
-// =============================
-// LANGUAGE SYSTEM
-// =============================
-
+// Initialize Language on Load
 const savedLang = localStorage.getItem("skyline_lang") || "en";
-
 changeLanguage(savedLang);
 
 document.querySelectorAll(".lang-btn").forEach(btn => {
@@ -1322,237 +1050,35 @@ document.querySelectorAll(".lang-btn").forEach(btn => {
     });
 });
 
-
-// =============================
-// CHANGE LANGUAGE
-// =============================
-
-function changeLanguage(lang) {
-
-    const t = translations[lang];
-    if (!t) return;
-
-    document.documentElement.lang = lang;
-    document.documentElement.dir = t.dir;
-
-    // ================= HERO =================
-
-    document.querySelector("#home h1").textContent = t.heroTitle;
-    document.querySelector("#home p").textContent = t.heroDesc;
-
-    document.querySelector(".btn1").textContent = t.quote;
-    document.querySelector(".btn2").textContent = t.ourServices;
-
-    // ================= ABOUT =================
-
-    document.querySelector("#about span").textContent = t.aboutSmall;
-    document.querySelector("#about h2").textContent = t.aboutTitle;
-
-    const aboutText = document.querySelectorAll("#about p");
-
-    if (aboutText.length >= 2) {
-        aboutText[0].textContent = t.aboutText1;
-        aboutText[1].textContent = t.aboutText2;
-    }
-
-    // Features
-
-    const features = document.querySelectorAll("#about .grid span");
-
-    if (features.length >= 4) {
-        features[0].textContent = t.feature1;
-        features[1].textContent = t.feature2;
-        features[2].textContent = t.feature3;
-        features[3].textContent = t.feature4;
-    }
-
-    // ================= WHY CHOOSE US =================
-
-    document.querySelector(".bg-gray-100 h2").textContent = t.whyTitle;
-    document.querySelector(".bg-gray-100 p").textContent = t.whyDesc;
-
-    // ================= SERVICES =================
-
-    document.querySelector("#services span").textContent = t.servicesSmall;
-    document.querySelector("#services h2").textContent = t.servicesTitle;
-    document.querySelector("#services .text-gray-500").textContent = t.servicesDesc;
-
-    // ================= PRODUCTS =================
-
-    document.querySelector("#products span").textContent = t.productsSmall;
-    document.querySelector("#products h2").textContent = t.productsTitle;
-
-    // ================= GALLERY =================
-
-    const gallery = document.querySelectorAll("section");
-
-    if (gallery[7]) {
-
-        gallery[7].querySelector("span").textContent = t.gallerySmall;
-        gallery[7].querySelector("h2").textContent = t.galleryTitle;
-
-    }
-
-    // ================= CONTACT =================
-
-    document.querySelector("#contact span").textContent = t.contactSmall;
-    document.querySelector("#contact h2").textContent = t.contactTitle;
-    document.querySelector("#contact .text-gray-600").textContent = t.contactDesc;
-
-    document.getElementById("sendBtn").textContent = t.send;
-
-    // ================= FORM PLACEHOLDERS =================
-
-    const inputs = document.querySelectorAll("#contactForm input");
-
-    inputs[0].placeholder = t.fullName;
-    inputs[1].placeholder = t.company;
-    inputs[2].placeholder = t.emailPlace;
-    inputs[3].placeholder = t.phonePlace;
-    inputs[4].placeholder = t.country;
-    inputs[5].placeholder = t.product;
-    inputs[6].placeholder = t.quantity;
-    inputs[7].placeholder = t.port;
-
-    document.querySelector("#contactForm textarea").placeholder = t.message;
-
-    // ================= FOOTER =================
-
-    document.getElementById("copyright").innerHTML =
-        `© ${new Date().getFullYear()} Skyline Global Trade. ${t.rights}`;
-
-    // ================= SAVE =================
-
-    localStorage.setItem("skyline_lang", lang);
-
-}
-
-
-// =============================
-// WHATSAPP FORM
-// =============================
-
+// ================= WHATSAPP FORM =================
 const contactForm = document.getElementById("contactForm");
-
 if (contactForm) {
-
     contactForm.addEventListener("submit", function (e) {
-
         e.preventDefault();
-
         const inputs = contactForm.querySelectorAll("input, textarea");
-
-        const fullName = inputs[0].value;
-        const company = inputs[1].value;
-        const email = inputs[2].value;
-        const phone = inputs[3].value;
-        const country = inputs[4].value;
-        const product = inputs[5].value;
-        const quantity = inputs[6].value;
-        const port = inputs[7].value;
-        const message = inputs[8].value;
-
-        const text =
-`*NEW TRADE REQUEST*
-
-Name: ${fullName}
-Company: ${company}
-Email: ${email}
-Phone: ${phone}
-Country: ${country}
-Product: ${product}
-Quantity: ${quantity}
-Destination Port: ${port}
-
-Message:
-${message}`;
-
-        window.open(
-            `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`,
-            "_blank"
-        );
-
+        const text = `*NEW TRADE REQUEST*\n\nName: ${inputs[0].value}\nCompany: ${inputs[1].value}\nEmail: ${inputs[2].value}\nPhone: ${inputs[3].value}\nCountry: ${inputs[4].value}\nProduct: ${inputs[5].value}\nQuantity: ${inputs[6].value}\nDestination Port: ${inputs[7].value}\n\nMessage:\n${inputs[8].value}`;
+        window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, "_blank");
     });
-
 }
 
-
-// =============================
-// SCROLL TO TOP
-// =============================
-
+// ================= SCROLL TO TOP =================
 const scrollBtn = document.getElementById("scrollTop");
-
 if (scrollBtn) {
-
     window.addEventListener("scroll", () => {
-
         scrollBtn.classList.toggle("hidden", window.scrollY < 400);
-
+        scrollBtn.classList.toggle("flex", window.scrollY >= 400);
     });
-
     scrollBtn.addEventListener("click", () => {
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
+        window.scrollTo({ top: 0, behavior: "smooth" });
     });
-
 }
 
-
-// =============================
-// NAVBAR SHADOW
-// =============================
-
+// ================= NAVBAR SHADOW =================
 const header = document.querySelector("header");
-
 window.addEventListener("scroll", () => {
-
     if (!header) return;
-
     header.classList.toggle("shadow-2xl", window.scrollY > 80);
-
 });
-
-
-// =============================
-// SCROLL ANIMATION
-// =============================
-
-const revealElements = document.querySelectorAll(
-    "section,.bg-white,.bg-gray-100"
-);
-
-revealElements.forEach(el => {
-
-    el.style.opacity = "0";
-    el.style.transform = "translateY(40px)";
-    el.style.transition = "all .8s ease";
-
-});
-
-function revealOnScroll() {
-
-    revealElements.forEach(el => {
-
-        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-
-            el.style.opacity = "1";
-            el.style.transform = "translateY(0)";
-
-        }
-
-    });
-
-}
-
-window.addEventListener("scroll", revealOnScroll);
-
-revealOnScroll();
-
 </script>
 </body>
 </html>
